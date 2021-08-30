@@ -1,5 +1,8 @@
 # distrowatch_api app
 
+[![run linter](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/lint.yml/badge.svg)](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/lint.yml)
+[![run tests](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/test.yml/badge.svg)](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/test.yml)
+
 ### Run the app in terminal
 
 1. Start a Postgres database server on your machine or in the cloud.
