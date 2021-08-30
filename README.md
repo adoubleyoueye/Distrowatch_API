@@ -2,6 +2,7 @@
 
 [![run linter](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/lint.yml/badge.svg)](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/lint.yml)
 [![run tests](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/test.yml/badge.svg)](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/test.yml)
+[![.github/workflows/deploy.yml](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/adoubleyoueye/Distrowatch_API/actions/workflows/deploy.yml)
 
 ### Run the app in terminal
 
