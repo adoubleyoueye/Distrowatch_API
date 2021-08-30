@@ -55,6 +55,7 @@ class Distro(models.Model):
 
 
 class DesktopInterface(models.Model):
+
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=True, unique=True)
 
@@ -63,6 +64,7 @@ class DesktopInterface(models.Model):
 
 
 class Architecture(models.Model):
+
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=True, unique=True)
 
