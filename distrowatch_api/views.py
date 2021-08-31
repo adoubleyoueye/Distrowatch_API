@@ -8,7 +8,7 @@ from .serializers import (
 )
 
 
-class DistroViewSet(viewsets.ModelViewSet):
+class DistroViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Distro.objects.all()
     serializer_class = DistroSerializer
     permission_classes = []
@@ -16,14 +16,14 @@ class DistroViewSet(viewsets.ModelViewSet):
                         'based_on', 'category', 'status', 'popularity', 'home_page', 'user_forums']
 
 
-class DesktopInterfaceViewSet(viewsets.ModelViewSet):
+class DesktopInterfaceViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = DesktopInterface.objects.all()
     serializer_class = DesktopInterfaceSerializer
     permission_classes = []
     filterset_fields = ['id', 'name']
 
 
-class ArchitectureViewSet(viewsets.ModelViewSet):
+class ArchitectureViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Architecture.objects.all()
     serializer_class = ArchitectureSerializer
     permission_classes = []
