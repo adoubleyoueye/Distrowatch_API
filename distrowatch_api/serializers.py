@@ -4,13 +4,11 @@ from .models import Architecture, DesktopInterface, Distro
 
 
 class DistroSerializer(serializers.ModelSerializer):
-    desktop_interfaces = serializers.PrimaryKeyRelatedField(
-        queryset=DesktopInterface.objects.all(),
+    desktop_interfaces = serializers.StringRelatedField(
         many=True,
         required=False
     )
-    architectures = serializers.PrimaryKeyRelatedField(
-        queryset=Architecture.objects.all(),
+    architectures = serializers.StringRelatedField(
         many=True,
         required=False
     )
