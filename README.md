@@ -6,9 +6,11 @@
 
 ### :dart: About ###
 
-*DistroWatch API* is a JSON API which provides basic information about Linux distributions as well as other free software/open source Unix-like operating systems.
+*[DistroWatch](https://distrowatch.com/) API* is a JSON API which provides basic information about Linux distributions as well as other free software/open source Unix-like operating systems. As you may know, there are literally dozens if not hundreds of Linux distributions.
 
-Data sourced from [DistroWatch](https://distrowatch.com/).
+I created this project because Linux is life. I got started with Linux in 2018. I grew to love it for more reasons than "it's not Windows".
+
+My distro of choice for desktop computing is Fedora xfce.
 
 ### :triangular_ruler: Technologies ###
 
@@ -16,7 +18,40 @@ Data sourced from [DistroWatch](https://distrowatch.com/).
 - Django Rest Framework
 - Postgresql
 
-### :runner: Getting started
+
+### Usage 
+
+#### [Documentation Link](https://distrowatch-api.herokuapp.com/swagger/)
+
+
+Retrieve information about a specific distrobution in JSON format.
+
+```curl -X GET "https://distrowatch-api.herokuapp.com/distro/17/" -H  "accept: application/json"``` 
+
+Example response:
+```json
+  {
+    "id": 17,
+    "name": "Baruwa Enterprise Edition",
+    "description": "Baruwa Enterprise Edition is a CentOS-based, commercial Linux distribution delivering fully-fledged mail security solutions. It provides protection from spam, viruses, phishing attempts and malware. It is designed for organizations of any size from small to medium businesses to large service providers, carriers and enterprises. Baruwa Enterprise Edition works with any standard SMTP server and it comes with automated installation and configuration management tools. The web-based management interface is implemented using web 2.0 features (AJAX) and available in over 25 languages. Also included is reporting functionality with an easy-to-use query builder and advanced search options.",
+    "logo": null,
+    "price": 0,
+    "os_type": "LINUX",
+    "origin": "South Africa",
+    "based_on": "Fedora, CentOS",
+    "category": null,
+    "status": "ACTIVE",
+    "popularity": 239,
+    "home_page": "https://www.baruwa.com/",
+    "user_forums": "--",
+    "desktop_interfaces": [],
+    "architectures": [
+      "x86_64"
+    ]
+  }
+```
+
+### :runner: Local install
 
 #### Run the app in terminal
 
@@ -58,12 +93,7 @@ $ make coverage
 $ make lint
 ```
 
-### :blue_book: Learning Objectives:
-- Creating serializers
-- Working with API views
-- Filtering back ends
-- Enabling pagination
-- Executing CRUD operations
-- Managing serializer fields
-- Testing API views
+### Resources
+- Data sourced from [DistroWatch](https://distrowatch.com/). 
+
 
