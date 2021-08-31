@@ -50,6 +50,9 @@ class Distro(models.Model):
     architectures = models.ManyToManyField(
         'Architecture', related_name='distros', db_table='distro_architecture', blank=True)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table = "distro"
 
@@ -59,6 +62,9 @@ class DesktopInterface(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=True, unique=True)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table = "desktopInterface"
 
@@ -67,6 +73,9 @@ class Architecture(models.Model):
 
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=True, unique=True)
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         db_table = "architecture"
